@@ -72,11 +72,11 @@ Plateformes supportées :
 
 Si vous téléchargez à partir des Releases, sélectionnez le programme d'installation de votre système.
 
- Plateforme | Fichier |
-| -------- | ---- |
-| Windows x64 | `Selvania-Launcher-win-x64.exe ` |
-| macOS x64 | `Selvania-Launcher-mac-x64.dmg` |
-| macOS arm64 | `Selvania-Launcher-mac-arm64.dmg` |
-| Linux x64 | `Selvania-Launcher-linux-x86_64.AppImage` |
+ Plateforme | Fichier                                 |
+| -------- |-----------------------------------------|
+| Windows x64 | `Cookie-Launcher-win-x64.exe `        |
+| macOS x64 | `Cookie-Launcher-mac-x64.dmg`         |
+| macOS arm64 | `Cookie-Launcher-mac-arm64.dmg`       |
+| Linux x64 | `Cookie-Launcher-linux-x86_64.AppImage` |
 
 ---
