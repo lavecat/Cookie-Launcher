@@ -8,8 +8,8 @@ const nodeFetch = require("node-fetch");
 const convert = require('xml-js');
 let url = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url
 
-let config = `${url}/launcher/config-launcher/config.json`;
-let news = `${url}/launcher/news-launcher/news.json`;
+let config = `${url}/config`;
+let news = `${url}/news`;
 
 class Config {
     GetConfig() {
@@ -24,14 +24,13 @@ class Config {
     }
 
     async getInstanceList() {
-        let urlInstance = `${url}/files`
+        let urlInstance = `${url}/instances`
         let instances = await nodeFetch(urlInstance).then(res => res.json()).catch(err => err)
         let instancesList = []
         instances = Object.entries(instances)
 
         for (let [name, data] of instances) {
             let instance = data
-            instance.name = name
             instancesList.push(instance)
         }
         return instancesList
