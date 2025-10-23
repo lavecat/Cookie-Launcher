@@ -9,7 +9,7 @@ const convert = require('xml-js');
 let url = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url
 
 let config = `${url}/config`;
-let news = `${url}/news`;
+let articles = `${url}/articles`;
 
 class Config {
     GetConfig() {
@@ -63,7 +63,7 @@ class Config {
             })
         } else {
             return new Promise((resolve, reject) => {
-                nodeFetch(news).then(async config => {
+                nodeFetch(articles).then(async config => {
                     if (config.status === 200) return resolve(config.json());
                     else return reject({ error: { code: config.statusText, message: 'server not accessible' } });
                 }).catch(error => {
