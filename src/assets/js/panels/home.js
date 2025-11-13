@@ -24,6 +24,7 @@ class Home {
         if (news) {
             if (!news.length) {
                 let blockNews = document.createElement('div');
+                const date = this.getdate(new Date())
                 blockNews.classList.add('news-block');
                 blockNews.innerHTML = `
                     <div class="news-header">
@@ -32,8 +33,8 @@ class Home {
                             <div class="title">Aucun news n'ai actuellement disponible.</div>
                         </div>
                         <div class="date">
-                            <div class="day">1</div>
-                            <div class="month">Janvier</div>
+                            <div class="day">${date.day}</div>
+                            <div class="month">${date.month}</div>
                         </div>
                     </div>
                     <div class="news-content">
@@ -69,6 +70,7 @@ class Home {
             }
         } else {
             let blockNews = document.createElement('div');
+            const date = this.getdate(new Date())
             blockNews.classList.add('news-block');
             blockNews.innerHTML = `
                 <div class="news-header">
@@ -77,8 +79,8 @@ class Home {
                             <div class="title">Error.</div>
                         </div>
                         <div class="date">
-                            <div class="day">1</div>
-                            <div class="month">Janvier</div>
+                            <div class="day">${date.day}</div>
+                            <div class="month">${date.month}</div>
                         </div>
                     </div>
                     <div class="news-content">
