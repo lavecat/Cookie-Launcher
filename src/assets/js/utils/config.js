@@ -36,9 +36,7 @@ class Config {
         return instancesList
     }
 
-    async getNews() {
-        let config = await this.GetConfig() || {}
-
+    async getNews(config) {
         if (config.rss) {
             return new Promise((resolve, reject) => {
                 nodeFetch(config.rss).then(async config => {
