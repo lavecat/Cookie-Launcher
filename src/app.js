@@ -9,6 +9,9 @@ const { autoUpdater } = require('electron-updater')
 
 const path = require('path');
 const fs = require('fs');
+const Store = require('electron-store');
+
+Store.initRenderer();
 
 const UpdateWindow = require("./assets/js/windows/updateWindow.js");
 const MainWindow = require("./assets/js/windows/mainWindow.js");
