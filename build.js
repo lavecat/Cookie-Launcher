@@ -62,6 +62,7 @@ class Index {
         builder.build({
             config: {
                 generateUpdatesFilesForAllChannels: false,
+                forceCodeSigning: false,
                 appId: preductname,
                 productName: preductname,
                 copyright: `Copyright © 2020-${new Date().getFullYear()} Luuxis`,
@@ -84,6 +85,7 @@ class Index {
                 }],
                 win: {
                     icon: "./app/assets/images/icon/icon.ico",
+                    verifyUpdateCodeSignature: false,
                     target: [{
                         target: "nsis",
                         arch: "x64"
@@ -97,7 +99,9 @@ class Index {
                     oneClick: true,
                     allowToChangeInstallationDirectory: false,
                     createDesktopShortcut: true,
-                    runAfterFinish: true
+                    runAfterFinish: true,
+                    perMachine: false,
+                    allowElevation: false
                 },
                 mac: {
                     icon: "./app/assets/images/icon/icon.icns",

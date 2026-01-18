@@ -1,13 +1,13 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "2.2.1",
-    "description": "Launcher Mincraft pour le serveur Selvania",
+    "name": "Cookie-Launcher",
+    "preductname": "Cookie Launcher",
+    "version": "2.2.2",
+    "description": "Launcher Mincraft pour le serveur cookie",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Inc.",
-        "email": "contact@luuxis.fr",
-        "url": "https://github.com/luuxis"
+        "name": "luuxis,lavecat , Inc.",
+        "email": "support@cookiesong.fr",
+        "url": "https://github.com/lavecat"
     },
     "url": "http://127.0.0.1:8000",
     "scripts": {
@@ -39,6 +39,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/lavecat/Cookie-Launcher.git"
     }
 }
